@@ -1,12 +1,16 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     line-height: 1.6;
     margin: 0;
-    padding: 0;
-    color: #333;
     background: url("/assets/background.png") no-repeat center center fixed;
     background-size: cover;
 }
+
 body::before {
     content: "";
     position: fixed;
@@ -18,34 +22,42 @@ body::before {
     backdrop-filter: blur(8px);
     z-index: -1;
 }
+
 .container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.85);
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s ease;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
 }
-.container:hover {
-    background: #ffffff;
+
+.profile img {
+    height: 10rem;
 }
-h1 {
-    color: #2c3e50;
+
+.profile h1 {
+    font-size: 48px;
+    margin: 10px 0 5px;
 }
-a {
-    color: #3498db;
+
+.profile p {
+    color: #666;
+    font-size: 16px;
+    margin: 0 0 20px;
+}
+
+.links a {
+    display: block;
+    background-color: #349b00;
+    color: #ffffff;
     text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-ul {
-    margin-top: 10px;
-}
-.note {
-    margin-top: 20px;
     padding: 10px;
-    background-color: #eaf2f8;
-    border-left: 5px solid #3498db;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.links a:hover {
+    background-color: #0056b3;
 }
